@@ -1,0 +1,20 @@
+{
+  "name": "a3podcast-website",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "run": "npm run prebuild && parcel src/index.html --dist-dir docs/",
+    "build": "npm run prebuild && parcel build src/index.html --dist-dir docs/",
+    "prebuild": "npm run clean && npm run prebuild-noclean",
+    "prebuild-noclean": "npm run copystatic",
+    "clean": "rm -rf docs && mkdir docs",
+    "copystatic": "cp -r src/static docs/static"
+  },
+  "devDependencies": {
+    "parcel": "2.5.0",
+    "typescript": "4.6.4"
+  },
+  "dependencies": {
+    "preact": "^10.7.2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "esModuleInterop": true,
+        "jsx": "react",
+        "jsxFactory": "h",
+        "jsxFragmentFactory": "h",
+        "lib": ["dom", "esnext"],
+        "module": "esnext",
+        "moduleResolution": "node",
+        "strict": true,
+        "target": "es5",
+        "noImplicitAny": true
+    },
+    "include": ["src/**/*"]
+}
